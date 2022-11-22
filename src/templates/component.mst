@@ -1,0 +1,26 @@
+import React from 'react';
+import Mui{{componentName}}, { {{componentName}}Props as Mui{{componentName}}Props } from '@mui/material/{{componentName}}';
+import { SxProps } from '@mui/system';
+import { Theme } from '@mui/material/styles';
+
+interface {{componentName}}Props extends Mui{{componentName}}Props {
+  dataId?: string;
+  sx?: SxProps<Theme>;
+}
+
+function {{componentName}}({
+  dataId,
+  sx,
+  ...props
+}: {{componentName}}Props) {
+  return (
+    <Mui{{componentName}}
+      data-id={dataId}
+      sx={sx}
+      { ...props}
+      >
+      </Mui{{componentName}}>
+  )
+}
+
+export default {{componentName}};
